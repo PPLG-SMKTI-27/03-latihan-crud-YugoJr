@@ -1,20 +1,49 @@
 # data buku
+class buku:
+    def __init__(self, isbn, judul, pengarang, jumlah):
+        self.isbn = isbn
+        self.judul = judul
+        self.pengarang = pengarang
+        self.jumlah = jumlah
+        self.terpinjam = 0
+        
+class pinjam:
+    def __init__(self, isbn, status, tanggal_pinjam, tanggal_kembali):
+        self.isbn = isbn
+        self.status = status
+        self.tanggal_pinjam = tanggal_pinjam
+        self.tanggal_kembali = tanggal_kembali
+
+
 books = [
-    {"isbn":"9786237121144",
-     "judul":"Kumpulan Solusi Pemrograman Python",
-     "pengarang":"Budi Raharjo",
-     "jumlah":6, "terpinjam":0},
-    {"isbn":"9786231800718",
-     "judul":"Dasar-Dasar Pengembangan Perangkat Lunak",
-     "pengarang":"Okta Purnawirawan", "jumlah":15, "terpinjam":0},
-    {"isbn":"9786026163905",
-     "judul":"Analisis dan Perancangan Sistem Informasi",
-     "pengarang":"Adi Sulistyo Nugroho",
-     "jumlah":2, "terpinjam":1},
-    {"isbn":"9786022912828",
-     "judul":"Animal Farm",
-     "pengarang":"George Orwell",
-     "jumlah":4, "terpinjam":0}
+    {
+        "isbn": "9786237121144",
+        "judul": "Kumpulan Solusi Pemrograman Python",
+        "pengarang": "Budi Raharjo",
+        "jumlah": 6,
+        "terpinjam": 0
+    },
+    {
+        "isbn": "9786231800718",
+        "judul": "Dasar-Dasar Pengembangan Perangkat Lunak",
+        "pengarang": "Okta Purnawirawan",
+        "jumlah": 15,
+        "terpinjam": 0
+    },
+    {
+        "isbn": "9786026163905",
+        "judul": "Analisis dan Perancangan Sistem Informasi",
+        "pengarang": "Adi Sulistyo Nugroho",
+        "jumlah": 2,
+        "terpinjam": 1
+    },
+    {
+        "isbn": "9786022912828",
+        "judul": "Animal Farm",
+        "pengarang": "George Orwell",
+        "jumlah": 4,
+        "terpinjam": 0
+    }
 ]
 
 # data peminjaman
